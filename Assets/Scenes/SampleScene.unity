@@ -273,6 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceMagnetude: 850
   maxVelocity: 6
+  rotationSpeed: 5
 --- !u!4 &379400435
 Transform:
   m_ObjectHideFlags: 0
