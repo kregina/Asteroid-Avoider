@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameOverHandler : MonoBehaviour
 {
+    [SerializeField] private TMP_Text gameOverText;
     [SerializeField] private GameObject gameOverDisplay;
+    [SerializeField] private ScoreSystem scoreSystem;
     [SerializeField] private AsteroidSpawner asteroidSpawner;
 
     public void EndGame()
     {
+        scoreSystem.StopScore();
+        gameOverText.text = $"Your Score: {scoreSystem.Score.ToString()}";
         asteroidSpawner.enabled = false;
         gameOverDisplay.gameObject.SetActive(true);
     }
