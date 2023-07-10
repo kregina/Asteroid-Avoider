@@ -417,7 +417,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 273095565}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2088494312}
+        m_TargetAssemblyTypeName: GameOverHandler, Assembly-CSharp
+        m_MethodName: ContinueGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &273095565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7014,3 +7026,5 @@ MonoBehaviour:
   gameOverDisplay: {fileID: 1720983338}
   scoreSystem: {fileID: 614578170}
   asteroidSpawner: {fileID: 350238586}
+  player: {fileID: 379400433}
+  continueButton: {fileID: 273095564}
